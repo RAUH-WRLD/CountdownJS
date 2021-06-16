@@ -13,7 +13,7 @@ class Countdown {
     countdown() {
         const currentYear = new Date().getFullYear();
         const offerStart = new Date();
-        const offerEnd = new Date(`Sun May 31 ${currentYear} 20:07:00`);
+        const offerEnd = new Date(`Sun May 31 ${currentYear + 30} 20:07:00`);
         const offerDifference = offerEnd - offerStart;
         const offerDaysLeft = Math.floor(offerDifference / 1000 / 60 / 60 / 24);
         const offerHoursLeft = Math.floor(offerDifference / 1000 / 60 / 60) % 24;
